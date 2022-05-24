@@ -2,6 +2,7 @@
 
 body {
   background-color: #000;
+  overflow: hidden;
 }
 
 p,
@@ -12,19 +13,17 @@ p,
 }
 
 .bg-image {
-  background-image: url('../img/background.gif');
-
-  filter: blur(6px);
-  -webkit-filter: blur(6px);
-
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-
-  background-repeat: no-repeat;
+  z-index: -2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 135%;
+  min-height: 110%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
   background-size: cover;
+  overflow: hidden;
 }
 
 .box {
@@ -35,14 +34,14 @@ p,
 
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  
+
   backdrop-filter: blur(10px);
 
   width: 90%;
 
   height: 35%;
   max-width: 580px;
-  
+
   border-radius: 5px;
 }
 
