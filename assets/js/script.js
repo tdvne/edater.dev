@@ -24,7 +24,7 @@ function startIntroTyping() {
   new TypeIt('#intro-text', {
     speed: 50,
   })
-    .type('Portfolio Loading...', { delay: 1200 })
+    .type('Welcome!', { delay: 1200 })
     .delete(null, { delay: 1000 })
     .type(`${mobile ? 'Tap' : 'Press any key'} to continue...`)
     .go();
