@@ -9,6 +9,8 @@ p,
 .maintext,
 .subtext {
   color: #fff;
+  text-align: center;
+  padding: 400px 0;
   font-family: 'Roboto Mono', monospace;
 }
 
